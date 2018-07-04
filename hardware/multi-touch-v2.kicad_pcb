@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.7+dfsg1-1ubuntu2)
 
   (general
     (links 69)
     (no_connects 0)
-    (area 42.709499 27.109499 68.0925 57.490501)
+    (area 42.044999 26.444999 282.27147 165.489573)
     (thickness 1.6002)
     (drawings 25)
     (tracks 302)
@@ -15,10 +15,11 @@
   (page A4)
   (title_block
     (title "Multi Touch Bricklet")
-    (rev 1.0)
+    (date 2018-07-04)
+    (rev 2.0)
     (company "Tinkerforge GmbH")
     (comment 1 "Licensed under CERN OHL v.1.1")
-    (comment 2 "Copyright (©) 2013, B.Nordmeyer <bastian@tinkerforge.com>")
+    (comment 2 "Copyright (©) 2018, L.Lauer <lukas@tinkerforge.com>")
   )
 
   (layers
@@ -42,7 +43,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.15)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
@@ -76,7 +77,7 @@
     (pad_drill 0.9)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFFBF)
+    (visible_elements FFFFEFBF)
     (pcbplotparams
       (layerselection 0x010fc_80000001)
       (usegerberextensions true)
@@ -6857,7 +6858,7 @@
   )
   (gr_arc (start 45.4 29.8) (end 42.9 29.8) (angle 90) (layer Edge.Cuts) (width 0.381))
   (gr_arc (start 45.4 54.8) (end 45.4 57.3) (angle 90) (layer Edge.Cuts) (width 0.381))
-  (gr_text "Copyright Tinkerforge GmbH 2013.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions" (at 258.32562 159.14878) (layer Cmts.User)
+  (gr_text "Copyright Tinkerforge GmbH 2018.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions" (at 258.32562 159.14878) (layer Cmts.User)
     (effects (font (size 0.8001 0.8001) (thickness 0.200025)))
   )
 
