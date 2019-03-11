@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:multi-touch-v2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -615,7 +616,7 @@ U 1 1 5C867B23
 P 9350 3500
 F 0 "U1" H 9375 4287 60  0000 C CNN
 F 1 "MPR121Q" H 9375 4181 60  0000 C CNN
-F 2 "tinkerforge:QFN-20-3x3" H 9375 4181 60  0001 C CNN
+F 2 "tinkerforge:QFN20-3X3" H 9375 4181 60  0001 C CNN
 F 3 "" H 9650 3600 60  0000 C CNN
 	1    9350 3500
 	1    0    0    -1  
