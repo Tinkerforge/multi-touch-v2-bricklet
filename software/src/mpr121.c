@@ -169,15 +169,12 @@ void mpr121_task_tick(void) {
 
 			uint16_t new_state = 0;
 			i2c_fifo_coop_read_register(&mpr121.i2c_fifo, MPR121_ELE07_T, 2, (uint8_t*)&new_state);
-			new_state &= mpr121.enabled_electrodes;
-			if(new_state != mpr121.state) {
-				mpr121.state = new_state;
-				if(mpr121.led.config == MULTI_TOUCH_V2_TOUCH_LED_CONFIG_SHOW_TOUCH) {
-					if(mpr121.state == 0) {
-						XMC_GPIO_SetOutputHigh(MPR121_TOUCH_LED_PIN);
-					} else {
-						XMC_GPIO_SetOutputLow(MPR121_TOUCH_LED_PIN);
-					}
+			mpr121.state = new_state & mpr121.enabled_electrodes;
+			if(mpr121.led.config == MULTI_TOUCH_V2_TOUCH_LED_CONFIG_SHOW_TOUCH) {
+				if(mpr121.state == 0) {
+					XMC_GPIO_SetOutputHigh(MPR121_TOUCH_LED_PIN);
+				} else {
+					XMC_GPIO_SetOutputLow(MPR121_TOUCH_LED_PIN);
 				}
 			}
 		}
@@ -234,6 +231,8 @@ void mpr121_init(void) {
 }
 
 void mpr121_tick(void) {
-	led_flicker_tick(&mpr121.led, system_timer_get_ms(), MPR121_TOUCH_LED_PIN);
+	if(mpr121.led.config != MULTI_TOUCH_V2_TOUCH_LED_CONFIG_SHOW_TOUCH) {
+		led_flicker_tick(&mpr121.led, system_timer_get_ms(), MPR121_TOUCH_LED_PIN);
+	}
 	coop_task_tick(&mpr121_task);
 }
