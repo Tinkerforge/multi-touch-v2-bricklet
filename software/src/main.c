@@ -28,15 +28,18 @@
 #include "bricklib2/hal/system_timer/system_timer.h"
 #include "bricklib2/logging/logging.h"
 #include "communication.h"
+#include "mpr121.h"
 
 int main(void) {
 	logging_init();
 	logd("Start Multi Touch Bricklet 2.0\n\r");
 
 	communication_init();
+	mpr121_init();
 
 	while(true) {
 		bootloader_tick();
 		communication_tick();
+		mpr121_tick();
 	}
 }
