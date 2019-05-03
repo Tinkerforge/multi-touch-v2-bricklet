@@ -1,0 +1,26 @@
+Needs["NETLink`"]
+LoadNETAssembly["Tinkerforge",NotebookDirectory[]<>"../../.."]
+
+host="localhost"
+port=4223
+uid="XYZ"(*Change XYZ to the UID of your Multi Touch Bricklet 2.0*)
+
+(*Create IPConnection and device object*)
+ipcon=NETNew["Tinkerforge.IPConnection"]
+mt=NETNew["Tinkerforge.BrickletMultiTouchV2",uid,ipcon]
+ipcon@Connect[host,port]
+
+(*Callback function for touch state callback*)
+TouchStateCB[sender_,state_]:=
+ Print["Touch State: "<>ToString[state]]
+AddEventHandler[mt@TouchStateCallback,TouchStateCB]
+
+(*Set period for touch state callback to 0.01s (10ms)*)
+mt@SetTouchStateCallbackConfiguration[10,True]
+
+Input["Click OK to exit"]
+
+(*Clean up*)
+ipcon@Disconnect[]
+ReleaseNETObject[mt]
+ReleaseNETObject[ipcon]
