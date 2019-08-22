@@ -33,7 +33,7 @@ int main(void) {
 	// Register touch state callback to function cb_touch_state
 	multi_touch_v2_register_callback(&mt,
 	                                 MULTI_TOUCH_V2_CALLBACK_TOUCH_STATE,
-	                                 (void *)cb_touch_state,
+	                                 (void (*)(void))cb_touch_state,
 	                                 NULL);
 
 	// Set period for touch state callback to 0.01s (10ms)
