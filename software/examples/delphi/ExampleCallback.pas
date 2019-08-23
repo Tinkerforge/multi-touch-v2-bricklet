@@ -12,7 +12,8 @@ type
     ipcon: TIPConnection;
     mt: TBrickletMultiTouchV2;
   public
-    procedure TouchStateCB(sender: TBrickletMultiTouchV2; const state: word);
+    procedure TouchStateCB(sender: TBrickletMultiTouchV2;
+                           const state: TArray0To12OfBoolean);
     procedure Execute;
   end;
 
@@ -25,9 +26,23 @@ var
   e: TExample;
 
 { Callback procedure for touch state callback }
-procedure TExample.TouchStateCB(sender: TBrickletMultiTouchV2; const state: word);
+procedure TExample.TouchStateCB(sender: TBrickletMultiTouchV2;
+                                const state: TArray0To12OfBoolean);
 begin
-  WriteLn(Format('Touch State: %d', [state]));
+  WriteLn(Format('Electrode 0: %d', [state[0]]));
+  WriteLn(Format('Electrode 1: %d', [state[1]]));
+  WriteLn(Format('Electrode 2: %d', [state[2]]));
+  WriteLn(Format('Electrode 3: %d', [state[3]]));
+  WriteLn(Format('Electrode 4: %d', [state[4]]));
+  WriteLn(Format('Electrode 5: %d', [state[5]]));
+  WriteLn(Format('Electrode 6: %d', [state[6]]));
+  WriteLn(Format('Electrode 7: %d', [state[7]]));
+  WriteLn(Format('Electrode 8: %d', [state[8]]));
+  WriteLn(Format('Electrode 9: %d', [state[9]]));
+  WriteLn(Format('Electrode 10: %d', [state[10]]));
+  WriteLn(Format('Electrode 11: %d', [state[11]]));
+  WriteLn(Format('Proximity: %d', [state[12]]));
+  WriteLn('');
 end;
 
 procedure TExample.Execute;

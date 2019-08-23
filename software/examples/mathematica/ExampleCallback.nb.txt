@@ -11,8 +11,24 @@ mt=NETNew["Tinkerforge.BrickletMultiTouchV2",uid,ipcon]
 ipcon@Connect[host,port]
 
 (*Callback function for touch state callback*)
-TouchStateCB[sender_,state_]:=
- Print["Touch State: "<>ToString[state]]
+TouchStateCB[sender_,
+             {state1_,state2_,state3_,state4_,state5_,state6_,state7_,state8_,state9_,state10_,state11_,state12_,state13_}]:=
+ Module[{},
+  Print["Electrode 0: "<>ToString[state1]];
+  Print["Electrode 1: "<>ToString[state2]];
+  Print["Electrode 2: "<>ToString[state3]];
+  Print["Electrode 3: "<>ToString[state4]];
+  Print["Electrode 4: "<>ToString[state5]];
+  Print["Electrode 5: "<>ToString[state6]];
+  Print["Electrode 6: "<>ToString[state7]];
+  Print["Electrode 7: "<>ToString[state8]];
+  Print["Electrode 8: "<>ToString[state9]];
+  Print["Electrode 9: "<>ToString[state10]];
+  Print["Electrode 10: "<>ToString[state11]];
+  Print["Electrode 11: "<>ToString[state12]];
+  Print["Proximity: "<>ToString[state13]]
+ ]
+
 AddEventHandler[mt@TouchStateCallback,TouchStateCB]
 
 (*Set period for touch state callback to 0.01s (10ms)*)

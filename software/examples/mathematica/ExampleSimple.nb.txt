@@ -11,7 +11,20 @@ mt=NETNew["Tinkerforge.BrickletMultiTouchV2",uid,ipcon]
 ipcon@Connect[host,port]
 
 (*Get current touch state*)
-Print["Touch State: "<>ToString[mt@GetTouchState[]]]
+
+Print["Electrode 0: "<>ToString[mt@GetTouchState[]1]]
+Print["Electrode 1: "<>ToString[mt@GetTouchState[]2]]
+Print["Electrode 2: "<>ToString[mt@GetTouchState[]3]]
+Print["Electrode 3: "<>ToString[mt@GetTouchState[]4]]
+Print["Electrode 4: "<>ToString[mt@GetTouchState[]5]]
+Print["Electrode 5: "<>ToString[mt@GetTouchState[]6]]
+Print["Electrode 6: "<>ToString[mt@GetTouchState[]7]]
+Print["Electrode 7: "<>ToString[mt@GetTouchState[]8]]
+Print["Electrode 8: "<>ToString[mt@GetTouchState[]9]]
+Print["Electrode 9: "<>ToString[mt@GetTouchState[]10]]
+Print["Electrode 10: "<>ToString[mt@GetTouchState[]11]]
+Print["Electrode 11: "<>ToString[mt@GetTouchState[]12]]
+Print["Proximity: "<>ToString[mt@GetTouchState[]13]]
 
 (*Clean up*)
 ipcon@Disconnect[]

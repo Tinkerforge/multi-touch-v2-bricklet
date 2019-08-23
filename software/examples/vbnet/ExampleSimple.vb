@@ -15,7 +15,20 @@ Module ExampleSimple
 
         ' Get current touch state
         Dim state As Boolean() = mt.GetTouchState()
-        Console.WriteLine("Touch State: " + state.ToString())
+
+        Console.WriteLine("Electrode 0: " + state(0).ToString())
+        Console.WriteLine("Electrode 1: " + state(1).ToString())
+        Console.WriteLine("Electrode 2: " + state(2).ToString())
+        Console.WriteLine("Electrode 3: " + state(3).ToString())
+        Console.WriteLine("Electrode 4: " + state(4).ToString())
+        Console.WriteLine("Electrode 5: " + state(5).ToString())
+        Console.WriteLine("Electrode 6: " + state(6).ToString())
+        Console.WriteLine("Electrode 7: " + state(7).ToString())
+        Console.WriteLine("Electrode 8: " + state(8).ToString())
+        Console.WriteLine("Electrode 9: " + state(9).ToString())
+        Console.WriteLine("Electrode 10: " + state(10).ToString())
+        Console.WriteLine("Electrode 11: " + state(11).ToString())
+        Console.WriteLine("Proximity: " + state(12).ToString())
 
         Console.WriteLine("Press key to exit")
         Console.ReadLine()

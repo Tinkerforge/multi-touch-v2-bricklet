@@ -13,7 +13,20 @@ const UID = 'XYZ'; // Change XYZ to the UID of your Multi Touch Bricklet 2.0
 // Callback function for touch state callback
 function cb_touchState($state)
 {
-    echo "Touch State: $state\n";
+    echo "Electrode 0: $state\n";
+    echo "Electrode 1: $state\n";
+    echo "Electrode 2: $state\n";
+    echo "Electrode 3: $state\n";
+    echo "Electrode 4: $state\n";
+    echo "Electrode 5: $state\n";
+    echo "Electrode 6: $state\n";
+    echo "Electrode 7: $state\n";
+    echo "Electrode 8: $state\n";
+    echo "Electrode 9: $state\n";
+    echo "Electrode 10: $state\n";
+    echo "Electrode 11: $state\n";
+    echo "Proximity: $state\n";
+    echo "\n";
 }
 
 $ipcon = new IPConnection(); // Create IP connection

@@ -13,7 +13,20 @@ sub cb_touch_state
 {
     my ($state) = @_;
 
-    print "Touch State: $state\n";
+    print "Electrode 0: " . @{$state}[0] . "\n";
+    print "Electrode 1: " . @{$state}[1] . "\n";
+    print "Electrode 2: " . @{$state}[2] . "\n";
+    print "Electrode 3: " . @{$state}[3] . "\n";
+    print "Electrode 4: " . @{$state}[4] . "\n";
+    print "Electrode 5: " . @{$state}[5] . "\n";
+    print "Electrode 6: " . @{$state}[6] . "\n";
+    print "Electrode 7: " . @{$state}[7] . "\n";
+    print "Electrode 8: " . @{$state}[8] . "\n";
+    print "Electrode 9: " . @{$state}[9] . "\n";
+    print "Electrode 10: " . @{$state}[10] . "\n";
+    print "Electrode 11: " . @{$state}[11] . "\n";
+    print "Proximity: " . @{$state}[12] . "\n";
+    print "\n";
 }
 
 my $ipcon = Tinkerforge::IPConnection->new(); # Create IP connection

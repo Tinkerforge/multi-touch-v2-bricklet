@@ -17,7 +17,20 @@ class Example
 
 		// Get current touch state
 		bool[] state = mt.GetTouchState();
-		Console.WriteLine("Touch State: " + state);
+
+		Console.WriteLine("Electrode 0: " + state[0]);
+		Console.WriteLine("Electrode 1: " + state[1]);
+		Console.WriteLine("Electrode 2: " + state[2]);
+		Console.WriteLine("Electrode 3: " + state[3]);
+		Console.WriteLine("Electrode 4: " + state[4]);
+		Console.WriteLine("Electrode 5: " + state[5]);
+		Console.WriteLine("Electrode 6: " + state[6]);
+		Console.WriteLine("Electrode 7: " + state[7]);
+		Console.WriteLine("Electrode 8: " + state[8]);
+		Console.WriteLine("Electrode 9: " + state[9]);
+		Console.WriteLine("Electrode 10: " + state[10]);
+		Console.WriteLine("Electrode 11: " + state[11]);
+		Console.WriteLine("Proximity: " + state[12]);
 
 		Console.WriteLine("Press enter to exit");
 		Console.ReadLine();

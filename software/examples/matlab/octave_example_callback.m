@@ -23,5 +23,18 @@ end
 
 % Callback function for touch state callback
 function cb_touch_state(e)
-    fprintf("Touch State: %d\n", e.state);
+    fprintf("Electrode 0: %d\n", e.state(1));
+    fprintf("Electrode 1: %d\n", e.state(2));
+    fprintf("Electrode 2: %d\n", e.state(3));
+    fprintf("Electrode 3: %d\n", e.state(4));
+    fprintf("Electrode 4: %d\n", e.state(5));
+    fprintf("Electrode 5: %d\n", e.state(6));
+    fprintf("Electrode 6: %d\n", e.state(7));
+    fprintf("Electrode 7: %d\n", e.state(8));
+    fprintf("Electrode 8: %d\n", e.state(9));
+    fprintf("Electrode 9: %d\n", e.state(10));
+    fprintf("Electrode 10: %d\n", e.state(11));
+    fprintf("Electrode 11: %d\n", e.state(12));
+    fprintf("Proximity: %d\n", e.state(13));
+    fprintf("\n");
 end

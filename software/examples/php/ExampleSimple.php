@@ -18,7 +18,20 @@ $ipcon->connect(HOST, PORT); // Connect to brickd
 
 // Get current touch state
 $state = $mt->getTouchState();
-echo "Touch State: $state\n";
+
+echo "Electrode 0: " . $state[0] . "\n";
+echo "Electrode 1: " . $state[1] . "\n";
+echo "Electrode 2: " . $state[2] . "\n";
+echo "Electrode 3: " . $state[3] . "\n";
+echo "Electrode 4: " . $state[4] . "\n";
+echo "Electrode 5: " . $state[5] . "\n";
+echo "Electrode 6: " . $state[6] . "\n";
+echo "Electrode 7: " . $state[7] . "\n";
+echo "Electrode 8: " . $state[8] . "\n";
+echo "Electrode 9: " . $state[9] . "\n";
+echo "Electrode 10: " . $state[10] . "\n";
+echo "Electrode 11: " . $state[11] . "\n";
+echo "Proximity: " . $state[12] . "\n";
 
 echo "Press key to exit\n";
 fgetc(fopen('php://stdin', 'r'));

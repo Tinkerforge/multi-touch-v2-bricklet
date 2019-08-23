@@ -44,7 +44,19 @@
                         // Get current touch state
                         mt.getTouchState(
                             function (state) {
-                                textArea.value += 'Touch State: ' + state + '\n';
+                                textArea.value += 'Electrode 0: ' + state[0] + '\n';
+                                textArea.value += 'Electrode 1: ' + state[1] + '\n';
+                                textArea.value += 'Electrode 2: ' + state[2] + '\n';
+                                textArea.value += 'Electrode 3: ' + state[3] + '\n';
+                                textArea.value += 'Electrode 4: ' + state[4] + '\n';
+                                textArea.value += 'Electrode 5: ' + state[5] + '\n';
+                                textArea.value += 'Electrode 6: ' + state[6] + '\n';
+                                textArea.value += 'Electrode 7: ' + state[7] + '\n';
+                                textArea.value += 'Electrode 8: ' + state[8] + '\n';
+                                textArea.value += 'Electrode 9: ' + state[9] + '\n';
+                                textArea.value += 'Electrode 10: ' + state[10] + '\n';
+                                textArea.value += 'Electrode 11: ' + state[11] + '\n';
+                                textArea.value += 'Proximity: ' + state[12] + '\n';
                             },
                             function (error) {
                                 textArea.value += 'Error: ' + error + '\n';

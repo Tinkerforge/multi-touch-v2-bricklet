@@ -19,7 +19,19 @@ ipcon.on(Tinkerforge.IPConnection.CALLBACK_CONNECTED,
         // Get current touch state
         mt.getTouchState(
             function (state) {
-                console.log('Touch State: ' + state);
+                console.log('Electrode 0: ' + state[0]);
+                console.log('Electrode 1: ' + state[1]);
+                console.log('Electrode 2: ' + state[2]);
+                console.log('Electrode 3: ' + state[3]);
+                console.log('Electrode 4: ' + state[4]);
+                console.log('Electrode 5: ' + state[5]);
+                console.log('Electrode 6: ' + state[6]);
+                console.log('Electrode 7: ' + state[7]);
+                console.log('Electrode 8: ' + state[8]);
+                console.log('Electrode 9: ' + state[9]);
+                console.log('Electrode 10: ' + state[10]);
+                console.log('Electrode 11: ' + state[11]);
+                console.log('Proximity: ' + state[12]);
             },
             function (error) {
                 console.log('Error: ' + error);

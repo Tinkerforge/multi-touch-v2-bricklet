@@ -18,8 +18,21 @@ func main() {
 	defer ipcon.Disconnect()
 	// Don't use device before ipcon is connected.
 
-	mt.RegisterTouchStateCallback(func(state uint16) {
-		fmt.Printf("Touch State: %d\n", state)
+	mt.RegisterTouchStateCallback(func(state [13]bool) {
+		fmt.Printf("Electrode 0: %s\n", state[0])
+		fmt.Printf("Electrode 1: %s\n", state[1])
+		fmt.Printf("Electrode 2: %s\n", state[2])
+		fmt.Printf("Electrode 3: %s\n", state[3])
+		fmt.Printf("Electrode 4: %s\n", state[4])
+		fmt.Printf("Electrode 5: %s\n", state[5])
+		fmt.Printf("Electrode 6: %s\n", state[6])
+		fmt.Printf("Electrode 7: %s\n", state[7])
+		fmt.Printf("Electrode 8: %s\n", state[8])
+		fmt.Printf("Electrode 9: %s\n", state[9])
+		fmt.Printf("Electrode 10: %s\n", state[10])
+		fmt.Printf("Electrode 11: %s\n", state[11])
+		fmt.Printf("Proximity: %s\n", state[12])
+		fmt.Println()
 	})
 
 	// Set period for touch state callback to 0.01s (10ms).

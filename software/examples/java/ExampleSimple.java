@@ -19,7 +19,20 @@ public class ExampleSimple {
 
 		// Get current touch state
 		boolean[] state = mt.getTouchState(); // Can throw com.tinkerforge.TimeoutException
-		System.out.println("Touch State: " + state);
+
+		System.out.println("Electrode 0: " + state[0]);
+		System.out.println("Electrode 1: " + state[1]);
+		System.out.println("Electrode 2: " + state[2]);
+		System.out.println("Electrode 3: " + state[3]);
+		System.out.println("Electrode 4: " + state[4]);
+		System.out.println("Electrode 5: " + state[5]);
+		System.out.println("Electrode 6: " + state[6]);
+		System.out.println("Electrode 7: " + state[7]);
+		System.out.println("Electrode 8: " + state[8]);
+		System.out.println("Electrode 9: " + state[9]);
+		System.out.println("Electrode 10: " + state[10]);
+		System.out.println("Electrode 11: " + state[11]);
+		System.out.println("Proximity: " + state[12]);
 
 		System.out.println("Press key to exit"); System.in.read();
 		ipcon.disconnect();

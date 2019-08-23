@@ -17,7 +17,20 @@ if __name__ == "__main__":
 
     # Get current touch state
     state = mt.get_touch_state()
-    print("Touch State: " + str(state))
+
+    print("Electrode 0: " + str(state[0]))
+    print("Electrode 1: " + str(state[1]))
+    print("Electrode 2: " + str(state[2]))
+    print("Electrode 3: " + str(state[3]))
+    print("Electrode 4: " + str(state[4]))
+    print("Electrode 5: " + str(state[5]))
+    print("Electrode 6: " + str(state[6]))
+    print("Electrode 7: " + str(state[7]))
+    print("Electrode 8: " + str(state[8]))
+    print("Electrode 9: " + str(state[9]))
+    print("Electrode 10: " + str(state[10]))
+    print("Electrode 11: " + str(state[11]))
+    print("Proximity: " + str(state[12]))
 
     raw_input("Press key to exit\n") # Use input() in Python 3
     ipcon.disconnect()

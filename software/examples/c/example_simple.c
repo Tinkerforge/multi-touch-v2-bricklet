@@ -30,7 +30,19 @@ int main(void) {
 		return 1;
 	}
 
-	printf("Touch State: %s\n", state ? "true" : "false");
+	printf("Electrode 0: %s\n", state[0] ? "true" : "false");
+	printf("Electrode 1: %s\n", state[1] ? "true" : "false");
+	printf("Electrode 2: %s\n", state[2] ? "true" : "false");
+	printf("Electrode 3: %s\n", state[3] ? "true" : "false");
+	printf("Electrode 4: %s\n", state[4] ? "true" : "false");
+	printf("Electrode 5: %s\n", state[5] ? "true" : "false");
+	printf("Electrode 6: %s\n", state[6] ? "true" : "false");
+	printf("Electrode 7: %s\n", state[7] ? "true" : "false");
+	printf("Electrode 8: %s\n", state[8] ? "true" : "false");
+	printf("Electrode 9: %s\n", state[9] ? "true" : "false");
+	printf("Electrode 10: %s\n", state[10] ? "true" : "false");
+	printf("Electrode 11: %s\n", state[11] ? "true" : "false");
+	printf("Proximity: %s\n", state[12] ? "true" : "false");
 
 	printf("Press key to exit\n");
 	getchar();

@@ -19,7 +19,21 @@ Notebook[{
    RowBox[{"
 "}],
    RowBox[{"(*", "Get current touch state", "*)"}],
-   RowBox[{"Print", "[", RowBox[{"\"\<Touch State: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}]}], "]"}]}], "]"}],
+   RowBox[{"
+"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 0: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "1"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 1: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "2"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 2: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "3"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 3: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "4"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 4: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "5"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 5: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "6"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 6: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "7"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 7: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "8"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 8: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "9"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 9: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "10"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 10: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "11"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Electrode 11: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "12"}], "]"}]}], "]"}],
+   RowBox[{"Print", "[", RowBox[{"\"\<Proximity: \>\"", "<>", RowBox[{"ToString", "[", RowBox[{"mt", "@", RowBox[{"GetTouchState", "[", "]"}], "13"}], "]"}]}], "]"}],
    RowBox[{"
 "}],
    RowBox[{"(*", "Clean up", "*)"}],

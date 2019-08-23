@@ -19,7 +19,20 @@ fn main() -> Result<(), Box<dyn Error>> {
     // is dropped, so there is no need for manual cleanup.
     thread::spawn(move || {
         for touch_state in touch_state_receiver {
-            println!("Touch State: {}", touch_state);
+            println!("Electrode 0: {}", touch_state[0]);
+            println!("Electrode 1: {}", touch_state[1]);
+            println!("Electrode 2: {}", touch_state[2]);
+            println!("Electrode 3: {}", touch_state[3]);
+            println!("Electrode 4: {}", touch_state[4]);
+            println!("Electrode 5: {}", touch_state[5]);
+            println!("Electrode 6: {}", touch_state[6]);
+            println!("Electrode 7: {}", touch_state[7]);
+            println!("Electrode 8: {}", touch_state[8]);
+            println!("Electrode 9: {}", touch_state[9]);
+            println!("Electrode 10: {}", touch_state[10]);
+            println!("Electrode 11: {}", touch_state[11]);
+            println!("Proximity: {}", touch_state[12]);
+            println!();
         }
     });
 

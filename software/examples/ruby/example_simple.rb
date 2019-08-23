@@ -18,7 +18,20 @@ ipcon.connect HOST, PORT # Connect to brickd
 
 # Get current touch state
 state = mt.get_touch_state
-puts "Touch State: #{state}"
+
+puts "Electrode 0: #{state[0]}"
+puts "Electrode 1: #{state[1]}"
+puts "Electrode 2: #{state[2]}"
+puts "Electrode 3: #{state[3]}"
+puts "Electrode 4: #{state[4]}"
+puts "Electrode 5: #{state[5]}"
+puts "Electrode 6: #{state[6]}"
+puts "Electrode 7: #{state[7]}"
+puts "Electrode 8: #{state[8]}"
+puts "Electrode 9: #{state[9]}"
+puts "Electrode 10: #{state[10]}"
+puts "Electrode 11: #{state[11]}"
+puts "Proximity: #{state[12]}"
 
 puts 'Press key to exit'
 $stdin.gets
