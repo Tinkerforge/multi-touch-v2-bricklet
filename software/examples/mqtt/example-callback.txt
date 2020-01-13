@@ -4,6 +4,6 @@ setup:
 	# Handle incoming touch state callbacks
 	subscribe to tinkerforge/callback/multi_touch_v2_bricklet/XYZ/touch_state
 	publish '{"register": true}' to tinkerforge/register/multi_touch_v2_bricklet/XYZ/touch_state # Register touch_state callback
-	
+
 	# Set period for touch state callback to 0.01s (10ms)
 	publish '{"period": 10, "value_has_to_change": true}' to tinkerforge/request/multi_touch_v2_bricklet/XYZ/set_touch_state_callback_configuration
