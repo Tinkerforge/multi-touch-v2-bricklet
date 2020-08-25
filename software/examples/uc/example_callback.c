@@ -1,13 +1,9 @@
-
-
 #include "bindings/hal_common.h"
 #include "bindings/bricklet_multi_touch_v2.h"
 
 #define UID "XYZ" // Change XYZ to the UID of your Multi Touch Bricklet 2.0
 
 void check(int rc, const char* msg);
-
-
 
 // Callback function for touch state callback
 void touch_state_handler(TF_MultiTouchV2 *device, bool state[13], void *user_data) {
@@ -28,7 +24,6 @@ void touch_state_handler(TF_MultiTouchV2 *device, bool state[13], void *user_dat
 	tf_hal_printf("Proximity: %s\n", state[12] ? "true" : "false");
 	tf_hal_printf("\n");
 }
-
 
 TF_MultiTouchV2 mt;
 
