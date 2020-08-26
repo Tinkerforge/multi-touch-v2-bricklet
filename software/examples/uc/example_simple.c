@@ -11,7 +11,6 @@ void example_setup(TF_HalContext *hal) {
 	// Create device object
 	check(tf_multi_touch_v2_create(&mt, UID, hal), "create device object");
 
-
 	// Get current touch state
 	bool state[13];
 	check(tf_multi_touch_v2_get_touch_state(&mt, state), "get touch state");
@@ -29,7 +28,6 @@ void example_setup(TF_HalContext *hal) {
 	tf_hal_printf("Electrode 10: %s\n", state[10] ? "true" : "false");
 	tf_hal_printf("Electrode 11: %s\n", state[11] ? "true" : "false");
 	tf_hal_printf("Proximity: %s\n", state[12] ? "true" : "false");
-
 }
 
 void example_loop(TF_HalContext *hal) {

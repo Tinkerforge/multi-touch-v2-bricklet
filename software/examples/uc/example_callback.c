@@ -31,15 +31,13 @@ void example_setup(TF_HalContext *hal) {
 	// Create device object
 	check(tf_multi_touch_v2_create(&mt, UID, hal), "create device object");
 
-
 	// Register touch state callback to function touch_state_handler
 	tf_multi_touch_v2_register_touch_state_callback(&mt,
-	                                               touch_state_handler,
-	                                               NULL);
+	                                                touch_state_handler,
+	                                                NULL);
 
 	// Set period for touch state callback to 0.01s (10ms)
 	tf_multi_touch_v2_set_touch_state_callback_configuration(&mt, 10, true);
-
 }
 
 void example_loop(TF_HalContext *hal) {
