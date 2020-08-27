@@ -5,8 +5,13 @@
 
 void check(int rc, const char* msg);
 
+void example_setup(TF_HalContext *hal);
+void example_loop(TF_HalContext *hal);
+
+
 // Callback function for touch state callback
-void touch_state_handler(TF_MultiTouchV2 *device, bool state[13], void *user_data) {
+static void touch_state_handler(TF_MultiTouchV2 *device, bool state[13],
+                                void *user_data) {
 	(void)device; (void)user_data; // avoid unused parameter warning
 
 	tf_hal_printf("Electrode 0: %s\n", state[0] ? "true" : "false");
@@ -25,7 +30,7 @@ void touch_state_handler(TF_MultiTouchV2 *device, bool state[13], void *user_dat
 	tf_hal_printf("\n");
 }
 
-TF_MultiTouchV2 mt;
+static TF_MultiTouchV2 mt;
 
 void example_setup(TF_HalContext *hal) {
 	// Create device object
