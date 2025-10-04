@@ -24,6 +24,7 @@
 #include "bricklib2/utility/communication_callback.h"
 #include "bricklib2/utility/util_definitions.h"
 #include "bricklib2/protocols/tfp/tfp.h"
+#include "bricklib2/hal/system_timer/system_timer.h"
 
 #include "mpr121.h"
 #include "configs/config_mpr121.h"
